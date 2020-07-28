@@ -48,7 +48,7 @@ end
 
 def nyc_pigeon_organizer(data)
   create_pigeon_name_hash(data)
-  $pigeon_list
+ if !$pigeon_list[name]=
 end
 
 # to create a new hash from an old one using map
