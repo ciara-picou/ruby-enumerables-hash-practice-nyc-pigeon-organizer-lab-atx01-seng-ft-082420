@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
   create_pigeon_name_hash(data)
   $pigeon_list.map do |lil_pidgies,values|
     values = Hash[data.keys.collect { |values| [values, ""] } ]
- lil_pidgies.each_with_object)({}) do ||
+# lil_pidgies.each_with_object)({}) do ||
   end
   $pigeon_list
 end
