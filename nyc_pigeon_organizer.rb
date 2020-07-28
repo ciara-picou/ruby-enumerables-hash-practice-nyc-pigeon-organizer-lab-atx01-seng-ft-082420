@@ -1,6 +1,12 @@
 
 def nyc_pigeon_organizer(data)
   pigeon_list = data.map do |pigeon_info_category_hash, pigeon_info_hash| [pigeon_info_category_hash, pigeon_info_category_hash].to_h  
+  pigeon_info_hash.each do |pigeon_quality, pigeon_names_array|
+    pigeon_names_array.each do |name|
+      if !pigeon_list[name]
+        pigeon_list[name] = {}
+      end
+      
   
     
 value.each do |inner_key, names|
