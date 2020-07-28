@@ -1,5 +1,5 @@
 
-#   require "pry"
+#   
 # $pigeon_array = []
 # $pigeon_list = Hash.new
 
@@ -22,11 +22,13 @@
 #   create_pigeon_name_hash(data)
 #   $pigeon_list
 # end
+
+# to create a new hash from an old one using map
 # hash = {a: 2, b: 3}
 # hash.map { |k, v| [k, v + 3] }.to_h     # => { a => 5, b => 6 }
 
 
-# to create a new hash fro an old one
+# to create a new hash from an old one using each_with_object
 # hash = { a: 2, b: 3 }
 # hash.each_with_object({}) do |(k, v), a|
 # a[k] = v + 3
