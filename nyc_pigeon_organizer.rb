@@ -1,7 +1,8 @@
 
 def nyc_pigeon_organizer(data)
   final_results = data.each_with_object({}) do |(key, value), final_array|
-   #
+   #This method iterates over each key-value pair and creates a new hash from the passed in data hash. So, the block variable final_array gets assigned to an empty hash. At the point, key points to :color and value points to a hash with a key of :purple and a value which is an array of pigeon names.
+
     value.each do |inner_key, names|
        names.each do |name|
          
