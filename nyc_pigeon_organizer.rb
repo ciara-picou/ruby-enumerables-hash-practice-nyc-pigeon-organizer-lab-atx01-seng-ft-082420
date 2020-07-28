@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
       # to create a new hash from an old one using map
 # hash = {a: 2, b: 3}
 # hash.map { |k, v| [k, v + 3] }.to_h     # => { a => 5, b => 6 }
- pigeon_list = [pigeon_info_category_hash, pigeon_info_hash].to_h
+ pigeon_list = {}
  data.map  do |pigeon_info_category_hash, pigeon_info_hash|
  
 
