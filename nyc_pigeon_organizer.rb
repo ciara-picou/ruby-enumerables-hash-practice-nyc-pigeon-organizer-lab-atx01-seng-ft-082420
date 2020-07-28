@@ -1,4 +1,4 @@
-require "pry"
+
   
 $pigeon_array = []
 $pigeon_list = Hash.new
@@ -22,7 +22,7 @@ def nyc_pigeon_organizer(data)
   create_pigeon_name_hash(data)
   $pigeon_list.map do |lil_pidgies,values|
     values_hash = Hash[data.keys.collect { |values| [values, {}] } ]
-    binding.pry
+  
 # lil_pidgies.each_with_object)({}) do ||
   end
   $pigeon_list
