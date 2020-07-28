@@ -18,9 +18,9 @@ def nyc_pigeon_organizer(data)
 end
 
 
-# helpful templates from
+# helpful templates from https://medium.com/launch-school/transforming-hashes-which-way-is-best-8f2122577984 
 
-  # to create a new hash from an old one using map
+ # to create a new hash from an old one using map
 # hash = {a: 2, b: 3}
 # hash.map { |k, v| [k, v + 3] }.to_h     # => { a => 5, b => 6 }
 
