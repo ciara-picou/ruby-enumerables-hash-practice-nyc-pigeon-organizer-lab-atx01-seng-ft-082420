@@ -28,6 +28,8 @@
 # end
 
 #   my original attempt: 
+
+require "pry"
 $pigeon_array = []
 $pigeon_list = Hash.new
 
@@ -42,14 +44,10 @@ data.each do |pigeon_info_hash , pigeon_info_details_hash|
 end
 $pigeon_array.uniq!
 $pigeon_list = Hash[$pigeon_array.collect{|item| [item, {} ]}]
-$pigeon_list
-
+binding.pry
 end
 
-def nyc_pigeon_organizer(data)
-  create_pigeon_name_hash(data)
- if !$pigeon_list[name]=
-end
+
 
 # to create a new hash from an old one using map
 # hash = {a: 2, b: 3}
