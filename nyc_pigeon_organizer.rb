@@ -1,4 +1,4 @@
-
+# The viedo solution explained:
 # def nyc_pigeon_organizer(data)
 #   final_results = data.each_with_object({}) do |(key, value), final_array|
     
@@ -28,28 +28,28 @@
 # end
 
 #   my original attempt: 
-# $pigeon_array = []
-# $pigeon_list = Hash.new
+$pigeon_array = []
+$pigeon_list = Hash.new
 
-# def create_pigeon_name_hash(data)
-# data.each do |pigeon_info_hash , pigeon_info_details_hash|
+def create_pigeon_name_hash(data)
+data.each do |pigeon_info_hash , pigeon_info_details_hash|
   
-#     pigeon_info_details_hash.each do|info_key , value_array|
-#       value_array.each do |pigeon_name|
-#           $pigeon_array.push(pigeon_name)
-#     end
-#   end
-# end
-# $pigeon_array.uniq!
-# $pigeon_list = Hash[$pigeon_array.collect{|item| [item, {} ]}]
-# $pigeon_list
+    pigeon_info_details_hash.each do|info_key , value_array|
+      value_array.each do |pigeon_name|
+          $pigeon_array.push(pigeon_name)
+    end
+  end
+end
+$pigeon_array.uniq!
+$pigeon_list = Hash[$pigeon_array.collect{|item| [item, {} ]}]
+$pigeon_list
 
-# end
+end
 
-# def nyc_pigeon_organizer(data)
-#   create_pigeon_name_hash(data)
-#   $pigeon_list
-# end
+def nyc_pigeon_organizer(data)
+  create_pigeon_name_hash(data)
+  $pigeon_list
+end
 
 # to create a new hash from an old one using map
 # hash = {a: 2, b: 3}
