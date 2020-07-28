@@ -1,4 +1,5 @@
-
+def nyc_pigeon_organizer(data)
+  final_results = data.each_with_object({}) do |(key, value), final_array|
 #   my original attempt: 
 # $pigeon_array = []
 # $pigeon_list = Hash.new
