@@ -18,7 +18,7 @@ def nyc_pigeon_organizer(data)
 end
 
 
-
+# helpful templates from
 
   # to create a new hash from an old one using map
 # hash = {a: 2, b: 3}
