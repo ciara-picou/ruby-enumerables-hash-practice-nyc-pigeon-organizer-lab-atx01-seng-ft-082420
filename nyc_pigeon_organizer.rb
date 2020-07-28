@@ -1,4 +1,4 @@
-require "pry"
+
   
 $pigeon_array = []
 $pigeon_list = Hash.new
@@ -15,7 +15,7 @@ end
 $pigeon_array.uniq!
 $pigeon_list = Hash[$pigeon_array.collect{|item| [item, {} ]}]
 $pigeon_list
-binding.pry
+
 end
 
 def nyc_pigeon_organizer(data)
