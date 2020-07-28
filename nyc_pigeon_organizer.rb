@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
 # hash = {a: 2, b: 3}
 # hash.map { |k, v| [k, v + 3] }.to_h     # => { a => 5, b => 6 }
  
- data.map  dp |pigeon_info_category_hash, pigeon_info_hash|
+ data.map  do |pigeon_info_category_hash, pigeon_info_hash|
  pigeon_list = [pigeon_info_category_hash, pigeon_info_hash].to_h
 
   pigeon_info_hash.each do |pigeon_quality, pigeon_names_array|
