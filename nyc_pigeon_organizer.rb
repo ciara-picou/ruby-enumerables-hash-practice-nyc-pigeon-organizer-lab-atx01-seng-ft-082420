@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
       end
     final_array[name][key].push(inner_key.to_s)
 
-# In the code above we fill the empty 
+# In the code above we populate the empty array with the values contained within inner key. Keeping in mind that the hash we are supposed to return features strings rather than symbols. we append .to_s to inner_key to ensure that we are returning the proper data type according to our prompt.
        end
     end
   end
