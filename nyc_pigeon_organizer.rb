@@ -12,7 +12,7 @@ data.each do |pigeon_info_hash , pigeon_info_details_hash|
      end
   end
 end
-$pigeon_array.uniq
+$pigeon_array.uniq!
 $pigeon_list = Hash[$pigeon_array.collect{|item| [item, "" ]}]
 $pigeon_list
 
@@ -22,7 +22,12 @@ def nyc_pigeon_organizer(data)
   create_pigeon_name_hash(data)
   $pigeon_list.map do |lil_pidgies,values|
     values = Hash[data.keys.collect { |values| [values, ""] } ]
- 
+ lil_pidgies.each_with_object)({}) do ||
   end
   $pigeon_list
 end
+# to create a new hash fro an old one
+# hash = { a: 2, b: 3 }
+# hash.each_with_object({}) do |(k, v), a|
+# a[k] = v + 3
+# end                   # => { a => 5, b => 6 }
