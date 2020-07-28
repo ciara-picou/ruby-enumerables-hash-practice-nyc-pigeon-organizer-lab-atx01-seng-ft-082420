@@ -31,7 +31,7 @@ end
 # a[k] = v + 3
 # end                   # => { a => 5, b => 6 }
 
-# The viedo solution explained:
+# The video solution explained:
 # def nyc_pigeon_organizer(data)
 #   final_results = data.each_with_object({}) do |(key, value), final_array|
     
