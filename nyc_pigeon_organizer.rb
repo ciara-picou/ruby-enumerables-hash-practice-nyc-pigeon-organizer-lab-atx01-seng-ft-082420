@@ -44,6 +44,7 @@ data.each do |pigeon_info_hash , pigeon_info_details_hash|
 end
 $pigeon_array.uniq!
 $pigeon_list = Hash[$pigeon_array.collect{|item| [item, {} ]}]
+$pigeon_list
 binding.pry
 end
 
