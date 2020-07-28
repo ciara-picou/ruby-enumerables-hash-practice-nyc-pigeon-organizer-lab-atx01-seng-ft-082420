@@ -1,5 +1,5 @@
 
-#   
+#   my original attempt: 
 # $pigeon_array = []
 # $pigeon_list = Hash.new
 
