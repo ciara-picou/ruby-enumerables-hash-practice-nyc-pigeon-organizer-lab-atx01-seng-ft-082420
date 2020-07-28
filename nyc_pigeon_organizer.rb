@@ -1,6 +1,6 @@
 
 def nyc_pigeon_organizer(data)
-  final_results = data.each_with_object({}) do |(key, value), final_array|
+  pigeon_list = data.map { |k, v| [k, v + 3] }.to_h  
     
 value.each do |inner_key, names|
       names.each do |name|
@@ -16,7 +16,6 @@ value.each do |inner_key, names|
       end
     end
   end
-  
 end
 
 
